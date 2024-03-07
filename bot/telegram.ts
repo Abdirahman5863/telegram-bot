@@ -104,16 +104,15 @@ bot.action("binance", async (ctx: Context) => {
       .resize()
   );
 });
-bot.command("menu", (ctx) => {
-  return ctx.reply(
-    "random example",
-    Markup.inlineKeyboard([
-      Markup.button.callback("Place Orders", "View Orders"),
-      Markup.button.callback("Get Price", "Cancel Orders"),
-      Markup.button.callback("Wallet Balance", "Active Orders"),
-      Markup.button.callback("Historical Orders", ""),
-    ])
-  );
-});
-
+// bot.command("menu", (ctx) => {
+//   return ctx.reply(
+//     "random example",
+//     Markup.inlineKeyboard([
+//       Markup.button.callback("Place Orders", "View Orders"),
+//       Markup.button.callback("Get Price", "Cancel Orders"),
+//       Markup.button.callback("Wallet Balance", "Active Orders"),
+//       Markup.button.callback("Historical Orders", ""),
+//     ])
+//   );
+// });
 export { bot };

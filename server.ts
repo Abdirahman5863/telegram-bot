@@ -1,7 +1,9 @@
-import express from "express";
+ import express from "express";
 import { bot } from "./bot/telegram";
+import { BinanceRoutes } from "./src/routes/api";
 
 const app = express();
+BinanceRoutes(app);
 const Main = async () => {
   try {
     console.log("-----------".repeat(5));
